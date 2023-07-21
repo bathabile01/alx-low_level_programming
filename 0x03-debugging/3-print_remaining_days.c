@@ -11,7 +11,7 @@
  */
 
 
-int print_remaining_days(int month, int day, int year)
+int printf_remaining_days(int month, int day, int year)
 
 {
 	if ((year % 4 == 0) && (year % 400 == 0 || year % 100 == 0))
