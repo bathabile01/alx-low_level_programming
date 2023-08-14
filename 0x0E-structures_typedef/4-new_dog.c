@@ -5,7 +5,7 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
 /**
- * new_dog: ...
+ * new_dog - ...
  * @name: ...
  * @age: ...
  * @owner: ...
@@ -44,7 +44,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		}
 
 		max_dog->name = _strcpy(max_dog->name, name);
-		max_dog->owner= _strcpy(max_dog->owner, owner);
+		max_dog->owner = _strcpy(max_dog->owner, owner);
 		max_dog->age = age;
 
 	}
