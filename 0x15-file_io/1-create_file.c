@@ -23,9 +23,9 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	fb = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	m = write(fd, text_content, corner);
+	m = write(fb, text_content, corner);
 
-	if (fb == -1 ||mw == -1)
+	if (fb == -1 ||m == -1)
 		return (-1);
 
 	close(fb);
